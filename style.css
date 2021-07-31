@@ -1,0 +1,185 @@
+/* ========== Fonts ========== */
+
+/* @font-face {
+    font-family: 'futura hv bt';
+    src: url('./fonts/Futura Hv BT Heavy.ttf');
+} */
+
+/* ========== Generics ========== */
+
+.body {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ========== Navbar ========== */
+
+/* Was already present in starter html as inline style, moved to css */
+.navbar .navbar-nav .nav-link:not(.btn) i.fa{
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+    text-align: center;
+    width: 21px;
+}
+
+.navbar-custom {
+    background-color: rgb(238, 238, 238);
+}
+
+.navbar-custom i {
+    color: rgb(19, 19, 19);
+}
+
+.navbar-custom a:hover i {
+    color: rgb(223, 41, 102);
+}
+
+.navbar-container img {
+    max-height: 25px;
+}
+
+/* ========== Center Button ========== */
+
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    background-color: rgb(223, 41, 102);
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+.button-read-more, .button-read-more:focus, .button-read-more:active  {
+    background-color: rgba(223, 41, 102, 0.85);
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ========== Center Content ========== */
+
+.content-center h1, h4 {
+    color: rgb(223, 41, 102);
+    background-color: rgb(19, 19, 19);
+}
+
+.content-center h1 {
+    color: rgb(240, 233, 235);
+}
+
+/* ========== S1: Product-description ========== */
+
+.how-to-container img {
+    max-height: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.how-to-image-container{
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.how-to-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-to-splash-image {
+    position: relative;
+
+    bottom: 800px;
+    margin-bottom: -800px;
+    left: 600px;
+    
+    z-index: 1;
+}
+
+.how-to-splash-image img {
+    max-height: 1000px;
+}
+
+/* ========== S2: ? ========== */
+
+.section-signup {
+    background: linear-gradient( 90deg, rgba(223, 41, 102, 0.8), rgba(231, 136, 48, 0.95) );
+
+    padding-bottom: 300px;
+}
+
+/* ========== Sign-up Card ========== */
+
+.sign-up-button, .sign-up-button:hover, .sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
+    color: rgb(238, 238, 238);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up-button, .sign-up-button:hover {
+    background-color: rgb(223, 41, 102);
+}
+
+.sign-up-button:active, .sign-up-button:hover, .sign-up-button:focus, .sign-up-button:not(:disabled):not(.disabled):active:focus {
+    background-color: rgb(212, 107, 142);
+}
+
+/* Mailchimp */
+#mc_embed_signup {
+    background: #fff; 
+    clear: left; 
+    font: 14px Helvetica, Arial, sans-serif; }
+
+/* ========== Sidebar ========== */
+
+@media screen and (max-width: 991px) {
+    .sidebar-collapse .navbar-collapse:before {
+        background: linear-gradient(rgb(223, 41, 102), rgb(231, 136, 48));
+    }
+
+    .sidebar-collapse a:hover i {
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* ========== Parallax ========== */
+
+#parallax-color-asset-1 {
+    background-image: url(color-asset-1.svg);
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1155px) {
+    #parallax-color-asset-1 {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1155px) {
+    #parallax-color-asset-1 {
+        height: 500px;
+        background-size: contain;
+    }
+}
+
+/* ========== Testing grounds ========== */
+
+/* .come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+} */
+
+/* .come-in:nth-child(odd) {
+    animation-duration: 0.6s; 
+} */
+  
+/* @keyframes come-in {
+    to { transform: translateY(0); }
+} */
